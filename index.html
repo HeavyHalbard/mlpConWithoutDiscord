@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>/mlp/ con without discord</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="a /mlp/ convention website without any Discord, bullshit and drama" />
+	<meta name="viewport" content="width=device-width" />  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" type="image/png" sizes="32x32" href="images/convention.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/convention.png">
+</head>
+<body>
+	<!-- Navigation bar (top) -->
+	<div class="topnav" id="myTopnav">
+	  <a href="#home" class="active">Home</a>
+	  <a href="https://www.youtube.com/watch?v=pcxCR-PD-ZI" target="_blank">About /mlp/</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+	<!-- Main content -->
+	<div class="bg-image"></div>
+
+	<div class="bg-text">
+	  	<h1 style="font-size:300%">/mlp/ con without Discord</h1>
+	  	
+	  	<a href="https://boards.4channel.org/mlp/catalog" target="_blank"><button class="button"><span>Take me there </span></button></a>
+		<img src="images/anonfilly.png" alt="Anonfilly" width="20%" style="float: left;" onmouseover="PlaySound( 'mySound') " onmouseout="StopSound( 'mySound') ">
+		<audio id='mySound' src='dew_it.ogg' />
+	</div>
+
+	<!-- scripts -->
+	<script>
+		// script for responsive Navigation bar
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "topnav";
+		  }
+		}
+
+		// script for image hover sound effect
+		function PlaySound(soundobj) {
+        	var thissound = document.getElementById(soundobj);
+        	thissound.play();
+     	}
+
+	    function StopSound(soundobj) {
+	    	var thissound = document.getElementById(soundobj);
+	        thissound.pause();
+	        thissound.currentTime = 0;
+	    }
+	</script>
+
+</body>
+</html>
